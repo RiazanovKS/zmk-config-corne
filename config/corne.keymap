@@ -62,7 +62,7 @@
 &kp TAB    &kp Q               &kp W           &kp E               &kp R             &kp T      &kp Y        &kp U            &kp I               &kp O           &kp P                  &kp LEFT_BRACKET
 &kp LCTRL  &mt LEFT_COMMAND A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt LSHFT J      &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_COMMAND SEMI  &kp SQT
 &kp LSHFT  &kp Z               &kp X           &kp C               &kp V             &kp B      &kp N        &kp M            &kp COMMA           &kp DOT         &kp FSLH               &kp RIGHT_BRACKET
-                                               &lt 5 ESCAPE        &lt 4 SPACE       &kp TAB    &lt 1 ENTER  &lt 3 BACKSPACE  &lt 2 DELETE
+                                               &lt 5 ESCAPE        &lt 4 SPACE       &kp TAB    &lt 6 ENTER  &lt 3 BACKSPACE  &lt 2 DELETE
             >;
         };
 
@@ -114,6 +114,15 @@
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp CAPSLOCK  &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT      &kp HOME        &kp PAGE_DOWN      &kp PAGE_UP      &kp END       &trans
                             &trans     &trans     &trans    &kp ENTER       &kp BSPC        &kp C_MUTE
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+&kp  &kp MINUS      &kp PLUS    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp  &kp        &kp        &kp       &kp       &kp
+&kp  &kp AMPERSAND  &kp DOLLAR  &kp QUESTION   &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp
+&kp  &kp SLASH      &kp PIPE    &kp BACKSLASH  &kp LBKT              &kp RBKT                 &kp  &kp        &kp        &kp       &kp       &kp
+                                &kp LESS_THAN  &kp GREATER_THAN      &kp UNDERSCORE           &kp  &kp        &kp
             >;
         };
     };
