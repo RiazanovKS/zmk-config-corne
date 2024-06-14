@@ -119,10 +119,10 @@
 
         symbol_layer {
             bindings = <
-&kp  &kp MINUS      &kp PLUS    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp  &kp        &kp        &kp       &kp       &kp
-&kp  &kp AMPERSAND  &kp DOLLAR  &kp QUESTION   &kp LEFT_BRACE        &kp RIGHT_BRACE          &kp  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &kp
-&kp  &kp SLASH      &kp PIPE    &kp BACKSLASH  &kp LBKT              &kp RBKT                 &kp  &kp        &kp        &kp       &kp       &kp
-                                &kp LESS_THAN  &kp GREATER_THAN      &kp UNDERSCORE           &kp  &kp        &kp
+&trans  &kp MINUS      &kp PLUS    &kp EQUAL      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp AMPERSAND  &kp DOLLAR  &kp QUESTION   &kp LEFT_BRACE        &kp RIGHT_BRACE          &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp SLASH      &kp PIPE    &kp BACKSLASH  &kp LBKT              &kp RBKT                 &trans  &trans     &trans     &trans    &trans    &trans
+                                   &kp LESS_THAN  &kp GREATER_THAN      &kp UNDERSCORE           &trans  &trans     &trans
             >;
         };
     };
