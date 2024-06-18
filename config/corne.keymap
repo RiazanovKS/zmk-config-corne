@@ -62,7 +62,43 @@
 &kp TAB    &kp Q               &kp W           &kp E               &kp R             &kp T      &kp Y        &kp U            &kp I               &kp O           &kp P                  &kp LEFT_BRACKET
 &kp LCTRL  &mt LEFT_COMMAND A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G      &kp H        &mt LSHFT J      &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_COMMAND SEMI  &kp SQT
 &kp LSHFT  &kp Z               &kp X           &kp C               &kp V             &kp B      &kp N        &kp M            &kp COMMA           &kp DOT         &kp FSLH               &kp RIGHT_BRACKET
-                                               &lt 5 ESCAPE        &lt 4 SPACE       &kp TAB    &lt 6 ENTER  &lt 3 BACKSPACE  &lt 2 DELETE
+                                               &lt 7 ESCAPE        &lt 2 SPACE       &kp TAB    &lt 4 ENTER  &lt 1 BACKSPACE  &lt 3 DELETE
+            >;
+        };
+
+        number_layer {
+            bindings = <
+&trans  &kp LBKT   &kp N7  &kp N8            &kp N9  &kp RBKT     &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp SEMI   &kp N4  &kp N5            &kp N6  &kp EQUAL    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp GRAVE  &kp N1  &kp N2            &kp N3  &kp FSLH     &trans  &trans     &trans     &trans    &trans    &trans
+                           &kp GREATER_THAN  &kp N0  &kp GRAVE    &trans  &trans     &trans
+            >;
+        };
+
+        symbol_layer {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &kp CARET  &kp AMPERSAND  &kp STAR          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp MINUS  &kp EQUAL      &kp GRAVE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
+&trans  &trans    &trans    &trans     &trans     &trans    &kp UNDER  &kp PLUS       &kp TILDE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+                            &trans     &trans     &trans    &trans     &kp LESS_THAN  &kp GREATER_THAN
+            >;
+        };
+
+        functional_layer {
+            bindings = <
+&trans  &kp F12  &kp F7  &kp F8   &kp F9     &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &kp F11  &kp F4  &kp F5   &kp F6     &kp SCROLLLOCK     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
+&trans  &kp F10  &kp F1  &kp F2   &kp F3     &kp PAUSE_BREAK    &trans  &trans     &trans     &trans    &trans    &trans
+                         &kp ESC  &kp SPACE  &kp TAB            &trans  &trans     &trans
+            >;
+        };
+
+        navigation_layer {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &kp K_REDO      &kp K_PASTE     &kp K_COPY     &kp K_CUT        &kp K_UNDO    &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp CAPSLOCK  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END       &trans
+                            &trans     &trans     &trans    &kp ENTER       &kp BSPC        &kp DELETE
             >;
         };
 
@@ -81,48 +117,12 @@
             >;
         };
 
-        functional_layer {
-            bindings = <
-&trans  &kp F12  &kp F7  &kp F8   &kp F9     &kp PRINTSCREEN    &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp F11  &kp F4  &kp F5   &kp F6     &kp SCROLLLOCK     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &kp F10  &kp F1  &kp F2   &kp F3     &kp PAUSE_BREAK    &trans  &trans     &trans     &trans    &trans    &trans
-                         &kp ESC  &kp SPACE  &kp TAB            &trans  &trans     &trans
-            >;
-        };
-
-        number_layer {
-            bindings = <
-&trans  &kp LBKT   &kp N7  &kp N8            &kp N9  &kp RBKT     &trans  &trans     &trans     &trans    &trans    &trans
-&trans  &kp SEMI   &kp N4  &kp N5            &kp N6  &kp EQUAL    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&trans  &kp GRAVE  &kp N1  &kp N2            &kp N3  &kp FSLH     &trans  &trans     &trans     &trans    &trans    &trans
-                           &kp GREATER_THAN  &kp N0  &kp GRAVE    &trans  &trans     &trans
-            >;
-        };
-
-        navigation_layer {
-            bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &kp K_REDO      &kp K_PASTE     &kp K_COPY     &kp K_CUT        &kp K_UNDO    &trans
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &kp CAPSLOCK  &trans
-&trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT      &kp HOME        &kp PAGE_DOWN  &kp PAGE_UP      &kp END       &trans
-                            &trans     &trans     &trans    &kp ENTER       &kp BSPC        &kp DELETE
-            >;
-        };
-
         media_layer {
             bindings = <
 &trans  &trans    &trans    &trans     &trans     &trans    &trans          &kp K_PASTE     &kp K_COPY         &kp K_CUT        &kp K_UNDO    &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp CAPSLOCK  &trans
 &trans  &trans    &trans    &trans     &trans     &trans    &kp INSERT      &kp HOME        &kp PAGE_DOWN      &kp PAGE_UP      &kp END       &trans
                             &trans     &trans     &trans    &kp ENTER       &kp BSPC        &kp C_MUTE
-            >;
-        };
-
-        symbol_layer {
-            bindings = <
-&kp DOUBLE_QUOTES  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR            &kp PERCENT              &trans  &trans     &trans     &trans    &trans    &trans
-&kp SINGLE_QUOTE   &kp ASTERISK     &kp SEMI     &kp QUESTION   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI  &trans
-&kp GRAVE          &kp SLASH        &kp PIPE     &kp BACKSLASH  &kp LBKT              &kp RBKT                 &trans  &trans     &trans     &trans    &trans    &trans
-                                                 &kp LESS_THAN  &kp GREATER_THAN      &kp MINUS                &trans  &trans     &trans
             >;
         };
     };
