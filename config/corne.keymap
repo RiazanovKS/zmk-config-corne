@@ -77,9 +77,9 @@
 
         symbol_layer {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans    &kp EXCL   &kp HASH       &kp AMPERSAND     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp MINUS  &kp EQUAL      &kp GRAVE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE
-&trans  &trans    &trans    &trans     &trans     &trans    &kp UNDER  &kp PLUS       &kp TILDE         &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &kp EXCL   &kp HASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp BACKSLASH
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp MINUS  &kp EQUAL      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE      &kp PIPE
+&trans  &trans    &trans    &trans     &trans     &trans    &kp UNDER  &kp PLUS       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE      &trans
                             &trans     &trans     &trans    &trans     &kp LESS_THAN  &kp GREATER_THAN
             >;
         };
